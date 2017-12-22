@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "LeoGalleguillos\\Facebook\\": "src/",
+            "LeoGalleguillos\\FacebookTest\\": "test/"
+        }
+    },
+    "license": "MIT",
+    "name": "leo-galleguillos/facebook",
+    "require": {
+        "zendframework/zend-test": "^3.1"
+    }
+}
