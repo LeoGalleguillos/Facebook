@@ -2,6 +2,7 @@
 namespace LeoGalleguillos\Facebook;
 
 use LeoGalleguillos\Facebook\Model\Factory\View\Helper\ShareUrl as ShareUrlHelperFactory;
+use LeoGalleguillos\Facebook\View\Helper\ShareUrl as ShareUrlHelper;
 
 class Module
 {
@@ -9,8 +10,11 @@ class Module
     {
         return [
             'view_helpers' => [
+                'aliases' => [
+                    'shareUrl' => ShareUrlHelper::class,
+                ],
                 'factories' => [
-                    'shareUrl' => ShareUrlHelperFactory::class,
+                    ShareUrlHelper::class => ShareUrlHelperFactory::class,
                 ],
             ],
         ];
