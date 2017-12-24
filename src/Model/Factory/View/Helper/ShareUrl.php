@@ -5,7 +5,7 @@ use Interop\Container\ContainerInterface;
 use LeoGalleguillos\Facebook\View\Helper\ShareUrl as ShareUrlHelper;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
-class Escape implements FactoryInterface
+class ShareUrl implements FactoryInterface
 {
     public function __invoke(
         ContainerInterface $container,
